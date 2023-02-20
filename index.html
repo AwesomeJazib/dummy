@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>You Tube Clone</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body id="siteBody">
+
+  <div class="site_wrapper">
+
+
+
+
+    <header class="header_wrap">
+      <div class="header_inner">
+
+        <div class="nav_left">
+          <ul class="top_nav">
+            <li class="d_mb-none"><a href="#" class="nav_item" id="nav-logo"><i class="icon-hamburger"
+                  aria-hidden="true"></i></a></li>
+            <li>
+              <a href="#" class="site_logo">
+                <figure>
+                  <img src="img/site_logo.png" alt="">
+                </figure>
+              </a></li>
+          </ul>
+        </div><!-- /.nav_left -->
+
+        <div class="nav_mid" id="mid-nav">
+          <button class="search_btn-back" id="search-btn-back"><i class="icon-arrow-left"></i></button>
+          <div class="form_section">
+            <form action="">
+              <input type="text" class="input_box" placeholder="Search">
+            </form>
+            <button class="search_btn" id="search-btn"><i class="icon-search"></i></button>
+
+            <button class="search_btn-responcive" id="search-btn-responcive"><i class="icon-search"></i></button>
+          </div><!-- /.form_section -->
+
+
+
+          <div>
+            <button class="audio_search width_none" id="search-audio"> <i class="icon-mic"></i></button>
+          </div>
+
+        </div><!-- /.nav_mid -->
+
+        <div class="nav_right">
+          <ul class="top_nav">
+            <li class="width_none">
+              <a href="#" class="nav_item">
+                <i class="icon-youtube"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav_item">
+                <i class="icon-bell"></i>
+                <span class="subscribed">
+                  <small>9+</small>
+                </span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="nav_item">
+                <span class="email_id">
+                  <img src="img/chanelLogo.jpg" alt="">
+                </span><!-- /.email_id -->
+
+              </a>
+            </li>
+          </ul>
+        </div><!-- /.nav_right -->
+
+      </div><!-- /.header_inner -->
+
+    </header>
+
+    <main>
+
+      <section class="site_contant">
+        <div class="site_contant-inner">
+
+
+          <aside class="site_contant-left" id="content-left">
+            <div class="site_contant-inner">
+
+
+              <ul class="side_nav mobile_nav">
+
+                <li class="width_none">
+                  <a href="#" class="menu_logo" id="nav-remove">
+                    <i class="icon-hamburger"></i>
+                    <figure>
+                      <img src="img/site_logo.png" alt="">
+                    </figure>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="menu_item">
+                    <i class="icon-home custom_weight" aria-hidden="true"></i>
+                    <span>Home</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="menu_item">
+                    <i class="icon-compass2" aria-hidden="true"></i>
+                    <span>Explore</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="menu_item">
+                    <i class="icon-shorts custom_weight" aria-hidden="true"></i>
+                    <span>Shorts</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="menu_item">
+                    <i class="icon-library custom_weight" aria-hidden="true"></i>
+                    <span>Subscription</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="menu_item">
+                    <i class="icon-subscribe custom_weight" aria-hidden="true"></i>
+                    <span>Library</span>
+                  </a>
+                </li>
+              </ul>
+
+
+              <hr>
+
+              <ul class="side_nav d_none">
+
+                <li>
+                  <a href="#" class="menu_item">
+                    <i class="icon-history custom_weight" aria-hidden="true"></i>
+                    <span>History</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="menu_item">
+                    <i class="icon-youtube" aria-hidden="true"></i>
+                    <span>Your Videos</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="menu_item">
+                    <i class="icon-clock" aria-hidden="true"></i>
+                    <span>Watch Later</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="menu_item">
+                    <i class="icon-thumbs-up" aria-hidden="true"></i>
+                    <span>liked Videos</span>
+                  </a>
+                </li>
+              </ul>
+
+
+              <hr>
+
+              <ul class="side_nav d_none">
+                <b>Subscription</b>
+                <li>
+
+                  <a href="#" class="menu_list-item">
+                    <div class="chanel_info">
+                      <span class="chanel_logo">
+                        <img src="img/channel-logo.jpg" alt="">
+                      </span>
+
+                      <span class="chanel_name">Chanel name</span>
+                    </div><!-- /.chanel_info -->
+
+                    <span class="chanel_status"></span>
+                  </a>
+
+                </li>
+
+                <li>
+
+                  <a href="#" class="menu_list-item">
+                    <div class="chanel_info">
+                      <span class="chanel_logo">
+                        <img src="img/channel-logo.jpg" alt="">
+                      </span>
+
+                      <span class="chanel_name">Chanel name</span>
+                    </div><!-- /.chanel_info -->
+
+                    <span class="chanel_status"></span>
+                  </a>
+
+                </li>
+
+                <li>
+
+                  <a href="#" class="menu_list-item">
+                    <div class="chanel_info">
+                      <span class="chanel_logo">
+                        <img src="img/channel-logo.jpg" alt="">
+                      </span>
+
+                      <span class="chanel_name">Chanel name</span>
+                    </div><!-- /.chanel_info -->
+
+                    <span class="chanel_status"></span>
+                  </a>
+
+                </li>
+
+                <li>
+
+                  <a href="#" class="menu_list-item">
+                    <div class="chanel_info">
+                      <span class="chanel_logo">
+                        <img src="img/channel-logo.jpg" alt="">
+                      </span>
+
+                      <span class="chanel_name">Chanel name</span>
+                    </div><!-- /.chanel_info -->
+
+                    <span class="chanel_status"></span>
+                  </a>
+
+                </li>
+
+                <li>
+
+                  <a href="#" class="menu_list-item">
+                    <div class="chanel_info">
+                      <span class="chanel_logo">
+                        <img src="img/channel-logo.jpg" alt="">
+                      </span>
+
+                      <span class="chanel_name">Chanel name</span>
+                    </div><!-- /.chanel_info -->
+
+                    <span class="chanel_status"></span>
+                  </a>
+
+                </li>
+
+                <li>
+
+                  <a href="#" class="menu_list-item">
+                    <div class="chanel_info">
+                      <span class="chanel_logo">
+                        <img src="img/channel-logo.jpg" alt="">
+                      </span>
+
+                      <span class="chanel_name">Chanel name</span>
+                    </div><!-- /.chanel_info -->
+
+                    <span class="chanel_status"></span>
+                  </a>
+
+                </li>
+
+                <li>
+
+                  <a href="#" class="menu_list-item">
+                    <div class="chanel_info">
+                      <span class="chanel_logo">
+                        <img src="img/channel-logo.jpg" alt="">
+                      </span>
+
+                      <span class="chanel_name">Chanel name</span>
+                    </div><!-- /.chanel_info -->
+
+                    <span class="chanel_status"></span>
+                  </a>
+
+                </li>
+
+                <li>
+
+                  <a href="#" class="menu_list-item">
+                    <div class="chanel_info">
+                      <span class="chanel_logo">
+                        <img src="img/channel-logo.jpg" alt="">
+                      </span>
+
+                      <span class="chanel_name">Chanel name</span>
+                    </div><!-- /.chanel_info -->
+
+                    <span class="chanel_status"></span>
+                  </a>
+
+                </li>
+
+                <li>
+
+                  <a href="#" class="menu_list-item">
+                    <div class="chanel_info">
+                      <span class="chanel_logo">
+                        <img src="img/channel-logo.jpg" alt="">
+                      </span>
+
+                      <span class="chanel_name">Chanel name</span>
+                    </div><!-- /.chanel_info -->
+
+                    <span class="chanel_status"></span>
+                  </a>
+
+                </li>
+
+                <li>
+
+                  <a href="#" class="menu_list-item">
+                    <div class="chanel_info">
+                      <span class="chanel_logo">
+                        <img src="img/channel-logo.jpg" alt="">
+                      </span>
+
+                      <span class="chanel_name">Chanel name</span>
+                    </div><!-- /.chanel_info -->
+
+                    <span class="chanel_status"></span>
+                  </a>
+
+                </li>
+
+                <li>
+
+                  <a href="#" class="menu_list-item">
+                    <div class="chanel_info">
+                      <span class="chanel_logo">
+                        <img src="img/channel-logo.jpg" alt="">
+                      </span>
+
+                      <span class="chanel_name">Chanel name</span>
+                    </div><!-- /.chanel_info -->
+
+                    <span class="chanel_status"></span>
+                  </a>
+
+                </li>
+
+                <li>
+
+                  <a href="#" class="menu_list-item">
+                    <div class="chanel_info">
+                      <span class="chanel_logo">
+                        <img src="img/channel-logo.jpg" alt="">
+                      </span>
+
+                      <span class="chanel_name">Chanel name</span>
+                    </div><!-- /.chanel_info -->
+
+                    <span class="chanel_status"></span>
+                  </a>
+
+                </li>
+
+              </ul>
+            </div><!-- /.site_contant-inner -->
+          </aside><!-- /.site_contant-left -->
+
+
+
+
+
+
+          <div class="site_contant-right" id="site-contant-right">
+
+
+            <section class="slider_content">
+              <div class="slider_content-inner">
+
+                <div
+                  class="swiper mySwiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-container slider1">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <a href="#" class="swiper_item">Pakistani Dramas</a>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <a href="#" class="swiper_item">Pakistani Dramas</a>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <a href="#" class="swiper_item">Pakistani Dramas</a>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <a href="#" class="swiper_item">Pakistani Dramas</a>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <a href="#" class="swiper_item">Pakistani Dramas</a>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <a href="#" class="swiper_item">Pakistani Dramas</a>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <a href="#" class="swiper_item">Pakistani Dramas</a>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <a href="#" class="swiper_item">Pakistani Dramas</a>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <a href="#" class="swiper_item">Pakistani Dramas</a>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <a href="#" class="swiper_item">Pakistani Dramas</a>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <a href="#" class="swiper_item">Pakistani Dramas</a>
+                    </div>
+
+
+
+
+                  </div>
+                  <!-- <div class="swiper-pagination"></div> -->
+                  <!-- <div class="swiper-scrollbar"></div> -->
+                </div>
+
+                <div class="swiper-button-prev">
+                  <i class="icon-back"></i>
+                </div>
+                <div class="swiper-button-next">
+                  <i class="icon-next1"></i>
+                </div>
+
+              </div><!-- /.slider_content-inner -->
+            </section><!-- /.slider_content -->
+
+
+
+
+            <section class="video_section">
+              <div class="row">
+
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                  <div class="video_card">
+                    <figure>
+                      <a href="videos-page.html" class="lideo_link">
+                        <img class="thumbnail_img" src="img/imgA.jpg" alt="">
+                        <span class="video_time">video time</span>
+                      </a>
+
+                      <figcaption class="meta_data-sec">
+
+                        <a href="#" class="meta_tab-img">
+                          <img class="chanel_logo" src="img/channel-logo.jpg" alt="">
+                        </a>
+
+                        <a href="#" class="mata_data">
+                          <span class="thumbail_text">
+                            Video thumbnail
+                          </span><!-- /.thumbail_text -->
+
+                          <span class="chanel_name">
+                            Chanel name
+                          </span><!-- /.chanel_name -->
+
+                          <span class="views">
+                            Views
+                          </span><!-- /.watch_time -->
+                          <span class="watch_time">
+                            witch time
+                          </span><!-- /.watch_time -->
+                        </a><!-- /.mta_data -->
+                      </figcaption>
+                    </figure>
+                  </div><!-- /.video_card -->
+                </div><!-- /.col -->
+
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                  <div class="video_card">
+                    <figure>
+                      <a href="videos-page.html" class="lideo_link">
+                        <img class="thumbnail_img" src="img/imgB.jpg" alt="">
+                        <span class="video_time">video time</span>
+                      </a>
+
+                      <figcaption class="meta_data-sec">
+
+                        <a href="#" class="meta_tab-img">
+                          <img class="chanel_logo" src="img/channel-logo.jpg" alt="">
+                        </a>
+
+                        <a href="#" class="mata_data">
+                          <span class="thumbail_text">
+                            Video thumbnail
+                          </span><!-- /.thumbail_text -->
+
+                          <span class="chanel_name">
+                            Chanel name
+                          </span><!-- /.chanel_name -->
+
+                          <span class="views">
+                            Views
+                          </span><!-- /.watch_time -->
+                          <span class="watch_time">
+                            witch time
+                          </span><!-- /.watch_time -->
+                        </a><!-- /.mta_data -->
+                      </figcaption>
+                    </figure>
+                  </div><!-- /.video_card -->
+                </div><!-- /.col -->
+
+
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                  <div class="video_card">
+                    <figure>
+                      <a href="videos-page.html" class="lideo_link">
+                        <img class="thumbnail_img" src="img/imgC.jpg" alt="">
+                        <span class="video_time">video time</span>
+                      </a>
+
+                      <figcaption class="meta_data-sec">
+
+                        <a href="#" class="meta_tab-img">
+                          <img class="chanel_logo" src="img/channel-logo.jpg" alt="">
+                        </a>
+
+                        <a href="#" class="mata_data">
+                          <span class="thumbail_text">
+                            Video thumbnail
+                          </span><!-- /.thumbail_text -->
+
+                          <span class="chanel_name">
+                            Chanel name
+                          </span><!-- /.chanel_name -->
+
+                          <span class="views">
+                            Views
+                          </span><!-- /.watch_time -->
+                          <span class="watch_time">
+                            witch time
+                          </span><!-- /.watch_time -->
+                        </a><!-- /.mta_data -->
+                      </figcaption>
+                    </figure>
+                  </div><!-- /.video_card -->
+                </div><!-- /.col -->
+
+
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                  <div class="video_card">
+                    <figure>
+                      <a href="videos-page.html" class="lideo_link">
+                        <img class="thumbnail_img" src="img/imgD.jpg" alt="">
+                        <span class="video_time">video time</span>
+                      </a>
+
+                      <figcaption class="meta_data-sec">
+
+                        <a href="#" class="meta_tab-img">
+                          <img class="chanel_logo" src="img/channel-logo.jpg" alt="">
+                        </a>
+
+                        <a href="#" class="mata_data">
+                          <span class="thumbail_text">
+                            Video thumbnail
+                          </span><!-- /.thumbail_text -->
+
+                          <span class="chanel_name">
+                            Chanel name
+                          </span><!-- /.chanel_name -->
+
+                          <span class="views">
+                            Views
+                          </span><!-- /.watch_time -->
+                          <span class="watch_time">
+                            witch time
+                          </span><!-- /.watch_time -->
+                        </a><!-- /.mta_data -->
+                      </figcaption>
+                    </figure>
+                  </div><!-- /.video_card -->
+                </div><!-- /.col -->
+
+
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                  <div class="video_card">
+                    <figure>
+                      <a href="videos-page.html" class="lideo_link">
+                        <img class="thumbnail_img" src="img/imgE.jpg" alt="">
+                        <span class="video_time">video time</span>
+                      </a>
+
+                      <figcaption class="meta_data-sec">
+
+                        <a href="#" class="meta_tab-img">
+                          <img class="chanel_logo" src="img/channel-logo.jpg" alt="">
+                        </a>
+
+                        <a href="#" class="mata_data">
+                          <span class="thumbail_text">
+                            Video thumbnail
+                          </span><!-- /.thumbail_text -->
+
+                          <span class="chanel_name">
+                            Chanel name
+                          </span><!-- /.chanel_name -->
+
+                          <span class="views">
+                            Views
+                          </span><!-- /.watch_time -->
+                          <span class="watch_time">
+                            witch time
+                          </span><!-- /.watch_time -->
+                        </a><!-- /.mta_data -->
+                      </figcaption>
+                    </figure>
+                  </div><!-- /.video_card -->
+                </div><!-- /.col -->
+
+
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                  <div class="video_card">
+                    <figure>
+                      <a href="videos-page.html" class="lideo_link">
+                        <img class="thumbnail_img" src="img/imgA.jpg" alt="">
+                        <span class="video_time">video time</span>
+                      </a>
+
+                      <figcaption class="meta_data-sec">
+
+                        <a href="#" class="meta_tab-img">
+                          <img class="chanel_logo" src="img/channel-logo.jpg" alt="">
+                        </a>
+
+                        <a href="#" class="mata_data">
+                          <span class="thumbail_text">
+                            Video thumbnail
+                          </span><!-- /.thumbail_text -->
+
+                          <span class="chanel_name">
+                            Chanel name
+                          </span><!-- /.chanel_name -->
+
+                          <span class="views">
+                            Views
+                          </span><!-- /.watch_time -->
+                          <span class="watch_time">
+                            witch time
+                          </span><!-- /.watch_time -->
+                        </a><!-- /.mta_data -->
+                      </figcaption>
+                    </figure>
+                  </div><!-- /.video_card -->
+                </div><!-- /.col -->
+
+
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                  <div class="video_card">
+                    <figure>
+                      <a href="videos-page.html" class="lideo_link">
+                        <img class="thumbnail_img" src="img/imgF.jpg" alt="">
+                        <span class="video_time">video time</span>
+                      </a>
+
+                      <figcaption class="meta_data-sec">
+
+                        <a href="#" class="meta_tab-img">
+                          <img class="chanel_logo" src="img/channel-logo.jpg" alt="">
+                        </a>
+
+                        <a href="#" class="mata_data">
+                          <span class="thumbail_text">
+                            Video thumbnail
+                          </span><!-- /.thumbail_text -->
+
+                          <span class="chanel_name">
+                            Chanel name
+                          </span><!-- /.chanel_name -->
+
+                          <span class="views">
+                            Views
+                          </span><!-- /.watch_time -->
+                          <span class="watch_time">
+                            witch time
+                          </span><!-- /.watch_time -->
+                        </a><!-- /.mta_data -->
+                      </figcaption>
+                    </figure>
+                  </div><!-- /.video_card -->
+                </div><!-- /.col -->
+
+
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                  <div class="video_card">
+                    <figure>
+                      <a href="videos-page.html" class="lideo_link">
+                        <img class="thumbnail_img" src="img/imgB.jpg" alt="">
+                        <span class="video_time">video time</span>
+                      </a>
+
+                      <figcaption class="meta_data-sec">
+
+                        <a href="#" class="meta_tab-img">
+                          <img class="chanel_logo" src="img/channel-logo.jpg" alt="">
+                        </a>
+
+                        <a href="#" class="mata_data">
+                          <span class="thumbail_text">
+                            Video thumbnail
+                          </span><!-- /.thumbail_text -->
+
+                          <span class="chanel_name">
+                            Chanel name
+                          </span><!-- /.chanel_name -->
+
+                          <span class="views">
+                            Views
+                          </span><!-- /.watch_time -->
+                          <span class="watch_time">
+                            witch time
+                          </span><!-- /.watch_time -->
+                        </a><!-- /.mta_data -->
+                      </figcaption>
+                    </figure>
+                  </div><!-- /.video_card -->
+                </div><!-- /.col -->
+
+
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                  <div class="video_card">
+                    <figure>
+                      <a href="videos-page.html" class="lideo_link">
+                        <img class="thumbnail_img" src="img/imgC.jpg" alt="">
+                        <span class="video_time">video time</span>
+                      </a>
+
+                      <figcaption class="meta_data-sec">
+
+                        <a href="#" class="meta_tab-img">
+                          <img class="chanel_logo" src="img/channel-logo.jpg" alt="">
+                        </a>
+
+                        <a href="#" class="mata_data">
+                          <span class="thumbail_text">
+                            Video thumbnail
+                          </span><!-- /.thumbail_text -->
+
+                          <span class="chanel_name">
+                            Chanel name
+                          </span><!-- /.chanel_name -->
+
+                          <span class="views">
+                            Views
+                          </span><!-- /.watch_time -->
+                          <span class="watch_time">
+                            witch time
+                          </span><!-- /.watch_time -->
+                        </a><!-- /.mta_data -->
+                      </figcaption>
+                    </figure>
+                  </div><!-- /.video_card -->
+                </div><!-- /.col -->
+
+
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                  <div class="video_card">
+                    <figure>
+                      <a href="videos-page.html" class="lideo_link">
+                        <img class="thumbnail_img" src="img/imgD.jpg" alt="">
+                        <span class="video_time">video time</span>
+                      </a>
+
+                      <figcaption class="meta_data-sec">
+
+                        <a href="#" class="meta_tab-img">
+                          <img class="chanel_logo" src="img/channel-logo.jpg" alt="">
+                        </a>
+
+                        <a href="#" class="mata_data">
+                          <span class="thumbail_text">
+                            Video thumbnail
+                          </span><!-- /.thumbail_text -->
+
+                          <span class="chanel_name">
+                            Chanel name
+                          </span><!-- /.chanel_name -->
+
+                          <span class="views">
+                            Views
+                          </span><!-- /.watch_time -->
+                          <span class="watch_time">
+                            witch time
+                          </span><!-- /.watch_time -->
+                        </a><!-- /.mta_data -->
+                      </figcaption>
+                    </figure>
+                  </div><!-- /.video_card -->
+                </div><!-- /.col -->
+
+
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                  <div class="video_card">
+                    <figure>
+                      <a href="videos-page.html" class="lideo_link">
+                        <img class="thumbnail_img" src="img/imgE.jpg" alt="">
+                        <span class="video_time">video time</span>
+                      </a>
+
+                      <figcaption class="meta_data-sec">
+
+                        <a href="#" class="meta_tab-img">
+                          <img class="chanel_logo" src="img/channel-logo.jpg" alt="">
+                        </a>
+
+                        <a href="#" class="mata_data">
+                          <span class="thumbail_text">
+                            Video thumbnail
+                          </span><!-- /.thumbail_text -->
+
+                          <span class="chanel_name">
+                            Chanel name
+                          </span><!-- /.chanel_name -->
+
+                          <span class="views">
+                            Views
+                          </span><!-- /.watch_time -->
+                          <span class="watch_time">
+                            witch time
+                          </span><!-- /.watch_time -->
+                        </a><!-- /.mta_data -->
+                      </figcaption>
+                    </figure>
+                  </div><!-- /.video_card -->
+                </div><!-- /.col -->
+
+
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                  <div class="video_card">
+                    <figure>
+                      <a href="videos-page.html" class="lideo_link">
+                        <img class="thumbnail_img" src="img/imgF.jpg" alt="">
+                        <span class="video_time">video time</span>
+                      </a>
+
+                      <figcaption class="meta_data-sec">
+
+                        <a href="#" class="meta_tab-img">
+                          <img class="chanel_logo" src="img/channel-logo.jpg" alt="">
+                        </a>
+
+                        <a href="#" class="mata_data">
+                          <span class="thumbail_text">
+                            Video thumbnail
+                          </span><!-- /.thumbail_text -->
+
+                          <span class="chanel_name">
+                            Chanel name
+                          </span><!-- /.chanel_name -->
+
+                          <span class="views">
+                            Views
+                          </span><!-- /.watch_time -->
+                          <span class="watch_time">
+                            witch time
+                          </span><!-- /.watch_time -->
+                        </a><!-- /.mta_data -->
+                      </figcaption>
+                    </figure>
+                  </div><!-- /.video_card -->
+                </div><!-- /.col -->
+              </div><!-- /.row -->
+
+              <div class="short_videos-sec">
+                <h3>Shorts</h3>
+
+
+                <div
+                  class="swiper mySwiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-container slider2">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="short_video-item">
+                        <figure>
+                          <a href="shorts.html" class="short_video-img">
+                            <img src="img/feature-1.jpg" alt="">
+                          </a>
+                          <figcaption>
+                            <b>title of video
+                              <small>no of views</small>
+                            </b>
+
+                          </figcaption>
+                        </figure>
+                      </div><!-- /.short_video-item -->
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="short_video-item">
+                        <figure>
+                          <a href="shorts.html" class="short_video-img">
+                            <img src="img/feature-2.jpg" alt="">
+                          </a>
+                          <figcaption>
+                            <b>title of video
+                              <small>no of views</small>
+                            </b>
+
+                          </figcaption>
+                        </figure>
+                      </div><!-- /.short_video-item -->
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="short_video-item">
+                        <figure>
+                          <a href="shorts.html" class="short_video-img">
+                            <img src="img/feature-3.jpg" alt="">
+                          </a>
+                          <figcaption>
+                            <b>title of video
+                              <small>no of views</small>
+                            </b>
+
+                          </figcaption>
+                        </figure>
+                      </div><!-- /.short_video-item -->
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="short_video-item">
+                        <figure>
+                          <a href="shorts.html" class="short_video-img">
+                            <img src="img/feature-4.jpg" alt="">
+                          </a>
+                          <figcaption>
+                            <b>title of video
+                              <small>no of views</small>
+                            </b>
+
+                          </figcaption>
+                        </figure>
+                      </div><!-- /.short_video-item -->
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="short_video-item">
+                        <figure>
+                          <a href="shorts.html" class="short_video-img">
+                            <img src="img/feature-5.jpg" alt="">
+                          </a>
+                          <figcaption>
+                            <b>title of video
+                              <small>no of views</small>
+                            </b>
+
+                          </figcaption>
+                        </figure>
+                      </div><!-- /.short_video-item -->
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="short_video-item">
+                        <figure>
+                          <a href="shorts.html" class="short_video-img">
+                            <img src="img/feature-6.jpg" alt="">
+                          </a>
+                          <figcaption>
+                            <b>title of video
+                              <small>no of views</small>
+                            </b>
+
+                          </figcaption>
+                        </figure>
+                      </div><!-- /.short_video-item -->
+                    </div>
+
+
+                  </div>
+                  <!-- <div class="swiper-pagination"></div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-scrollbar"></div> -->
+                </div>
+
+
+
+
+
+
+
+
+              </div><!-- /.short_videos-sec -->
+            </section><!-- /.video_section -->
+
+
+
+
+          </div><!-- /.site_contant-right -->
+
+        </div><!-- /.site_contant-inner -->
+
+      </section>
+
+    </main>
+
+    <footer>
+
+
+
+    </footer>
+
+
+    <section class="modal_section"  id="modalSection">
+      <div class="btn_box">
+          
+        <button class="modal_back" id="modalClose">X</button>
+      </div><!-- /.btn_box -->
+      <div class="modal_sec-inner">
+
+        
+
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/slider-img-a.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/slider-img-2.jpg" class="d-block w-100" alt="...">
+            </div>
+            
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <div class="login_form">
+          
+          <form>
+            <div class="form_row-wrap">
+              <div class="mb-3 form_col">
+                
+                <input placeholder="Full name" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3 form_col">
+                
+                <input placeholder="Mobile no" type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+            </div><!-- /.form_row-wrap -->
+            <div class="form_row-wrap">
+              <div class="mb-3 form_col">
+                
+                <input placeholder="Area" type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="mb-3 form_col">
+                
+                <input placeholder="Center" type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+            </div><!-- /.form_row-wrap -->
+            <button type="submit" class="btn btn-primary">Register</button>
+          </form>
+
+        </div><!-- /.login_form -->
+
+      </div><!-- /.modal_sec-inner -->
+
+
+
+
+      
+      
+    </section>
+
+
+
+  </div><!-- /.site_wrapper -->
+
+
+
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+
+
+
+
+</body>
+
+</html>
